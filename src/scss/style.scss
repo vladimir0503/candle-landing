@@ -1,0 +1,47 @@
+@import "normalize.css";
+@import "./common/common.scss";
+@import "./header/header.scss";
+@import "./sections/mainTitle.scss";
+@import "./sections/about.scss";
+@import "./sections/benefits.scss";
+@import "./sections/consultationForm.scss";
+@import "./sections/services.scss";
+@import "./sections/slider.scss";
+@import "./sections/news.scss";
+@import "./sections/reviews.scss";
+@import "./sections/price.scss";
+
+:root {
+    --brown: #765447;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+span {
+    color: var(--brown);
+}
+
+input {
+    outline: none;
+}
+
+button {
+    background-color: var(--brown);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+
+    &:active {
+        transform: scale(0.98);
+        opacity: 0.33;
+    }
+}

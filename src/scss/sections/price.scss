@@ -1,0 +1,36 @@
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__content {
+        width: 1217px;
+        margin-top: 39px;
+
+        %cell {
+            font-size: 17px;
+            outline: 1px solid #dee2e6;
+            outline-offset: 0px;
+            width: 400px;
+            height: 50px;
+            text-align: left;
+            padding-left: 10px;
+        }
+
+        table {
+            width: 100%;
+
+            th {
+                @extend %cell;
+            }
+
+            tbody {
+                td {
+                    @extend %cell;
+                    font-size: 16px;
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+}

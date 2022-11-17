@@ -1,0 +1,50 @@
+.services {
+    display: flex;
+    width: 100%;
+    padding: 50px 0 50px 0;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 1049px;
+        margin: 0 auto;
+
+        &--items-wrapper {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-top: 61px;
+        }
+
+        &--item {
+            display: flex;
+            width: 450px;
+            margin-bottom: 62px;
+
+            &-descr {
+                margin-left: 32px;
+
+                h3 {
+                    font-size: 20px;
+                    font-weight: 100;
+                    margin: 0;
+                    margin-bottom: 23px;
+                }
+
+                p {
+                    margin: 0;
+                    font-weight: 100;
+                    line-height: 150%;
+                    margin-bottom: 23px;
+                }
+
+                button {
+                    width: 200px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}

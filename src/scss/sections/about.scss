@@ -1,0 +1,40 @@
+.about {
+    display: flex;
+    width: 100%;
+    padding: 106px 0 63px 0;
+
+    &__content {
+        display: flex;
+        width: 1170px;
+        margin: 0 auto;
+
+        &--photo {
+            img {
+                width: 430px;
+                height: 573px;
+                margin-right: 60px;
+            }
+        }
+
+        &--decription {
+            h1 {
+                font-size: 48px;
+                font-weight: 500;
+                margin: 0;
+            }
+
+            h3 {
+                font-size: 36px;
+                font-weight: 100;
+                margin: 0;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 17px;
+                line-height: 1.4;
+                font-weight: 100;
+            }
+        }
+    }
+}
