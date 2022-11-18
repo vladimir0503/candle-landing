@@ -1,0 +1,21 @@
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.57);
+
+    form {
+        width: 350px;
+        height: auto;
+        background: #fff;
+        padding: 30px;
+    }
+}
