@@ -1,0 +1,28 @@
+.address {
+    &__map {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__text {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        padding: 60px;
+        margin-top: -443px;
+        margin-left: 924px;
+        background-color: white;
+
+        p {
+            margin: 0;
+            font-size: 20px;
+            line-height: 1.4;
+        }
+
+        a {
+            color: var(--brown);
+        }
+    }
+}
