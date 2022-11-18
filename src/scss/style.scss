@@ -12,6 +12,7 @@
 @import "./sections/price.scss";
 @import "./sections/feedback.scss";
 @import "./sections/address.scss";
+@import "./footer/footer.scss";
 
 :root {
     --brown: #765447;
@@ -25,6 +26,7 @@ ul,
 li {
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 span {
