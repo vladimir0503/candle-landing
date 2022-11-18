@@ -45,7 +45,7 @@
                         <li><span>✓</span> Доступная стоимость услуг</li>
                         <li><span>✓</span> 100% гарантия качества</li>
                     </ul>
-                    <button>Бесплатная консультация</button>
+                    <button id="modalBtn" >Бесплатная консультация</button>
                 </div>
             </div>
         </section>
@@ -136,7 +136,7 @@
                         <div class="services__content--item-descr">
                             <h3>Название услуги 1</h3>
                             <p>Напишите здесь описание услуги, которую вы предлагаете, из 2-3 предложений.</p>
-                            <button>Подробнее</button>
+                            <button id="modalBtn">Подробнее</button>
                         </div>
                     </div>
                     <div class="services__content--item">
@@ -144,7 +144,7 @@
                         <div class="services__content--item-descr">
                             <h3>Название услуги 1</h3>
                             <p>Напишите здесь описание услуги, которую вы предлагаете, из 2-3 предложений.</p>
-                            <button>Подробнее</button>
+                            <button id="modalBtn">Подробнее</button>
                         </div>
                     </div>
                     <div class="services__content--item">
@@ -152,7 +152,7 @@
                         <div class="services__content--item-descr">
                             <h3>Название услуги 1</h3>
                             <p>Напишите здесь описание услуги, которую вы предлагаете, из 2-3 предложений.</p>
-                            <button>Подробнее</button>
+                            <button id="modalBtn">Подробнее</button>
                         </div>
                     </div>
                     <div class="services__content--item">
@@ -160,7 +160,7 @@
                         <div class="services__content--item-descr">
                             <h3>Название услуги 1</h3>
                             <p>Напишите здесь описание услуги, которую вы предлагаете, из 2-3 предложений.</p>
-                            <button>Подробнее</button>
+                            <button id="modalBtn">Подробнее</button>
                         </div>
                     </div>
                     <div class="services__content--item">
@@ -168,7 +168,7 @@
                         <div class="services__content--item-descr">
                             <h3>Название услуги 1</h3>
                             <p>Напишите здесь описание услуги, которую вы предлагаете, из 2-3 предложений.</p>
-                            <button>Подробнее</button>
+                            <button id="modalBtn">Подробнее</button>
                         </div>
                     </div>
                     <div class="services__content--item">
@@ -176,7 +176,7 @@
                         <div class="services__content--item-descr">
                             <h3>Название услуги 1</h3>
                             <p>Напишите здесь описание услуги, которую вы предлагаете, из 2-3 предложений.</p>
-                            <button>Подробнее</button>
+                            <button id="modalBtn">Подробнее</button>
                         </div>
                     </div>
                 </div>
@@ -374,6 +374,7 @@
         </div>
     </footer>
     <div class="modal">
+        <img id="hideModalBtn" src="./img/cross.png" alt="cross"/>
         <form>
             <p>Оставить заявку</p>
             <div>
@@ -386,9 +387,11 @@
             </div>
             <div>
                 <label for="question">Задайте ваш вопрос</label>
-                <p>наш менеджер Вам </p>
+                <p>Наш менеджер Вам перезвонит</p>
                 <input type="text" id="question" required placeholder="Задайте ваш вопрос">
             </div>
+            <button>Записаться сейчас!</button>
+            <p>Нажимая на кнопку, Вы принимаете <a href="#">Положение</a> и <a href="#">Согласие</a> на обработку персональных данных.</p>
         </form>
     </div>
 </body>
