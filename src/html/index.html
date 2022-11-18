@@ -118,9 +118,9 @@
             <div class="consultation-form__content">
                 <h1><span>Запишитесь на консультацию</span></h1>
                 <form>
-                    <input type="text" placeholder="Введите имя" required="required">
-                    <input type="email" placeholder="mail@mail.ru" required="required">
-                    <input type="tel" placeholder="xxx-xxx-xxx" required="required">
+                    <input type="text" placeholder="Введите имя" required>
+                    <input type="email" placeholder="mail@mail.ru" required>
+                    <input type="tel" placeholder="xxx-xxx-xxx" required>
                     <button>Записаться сейчас!</button>
                 </form>
                 <p>Нажимая на кнопку, Вы принимаете Положение и Согласие на обработку персональных данных.</p>
@@ -301,6 +301,31 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
+        </section>
+        <section class="feegback">
+            <div class="feegback__content">
+                <div class="feegback__content--form-block">
+                        <h1 class="section-title">Обратная <span>связь</span></h1>
+                        <h2>Свяжитесь с нами</h2>
+                        <div class="separator"></div>
+                    <form>
+                        <div>
+                            <label for="name">Введие имя</label>
+                            <input type="text" id="name" required placeholder="Введие имя">
+                        </div>
+                        <div>
+                            <label for="mail">Введите email</label>
+                            <input type="email" id="mail" required placeholder="Введите email">
+                        </div>
+                        <div>
+                            <label for="question">Задайте ваш вопрос</label>
+                            <input type="text" id="question" required placeholder="Задайте ваш вопрос">
+                        </div>
+                        <button>Отправить</button>
+                    </form>
+                </div>
+                <img src="../img/photo2.jpg" alt="photo">
             </div>
         </section>
     </main>
