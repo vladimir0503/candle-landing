@@ -17,7 +17,7 @@ const modal = () => {
         modal.classList.remove('show');
     });
 
-    const timerId = setTimeout(showModal, 10000);
+    // const timerId = setTimeout(showModal, 10000);
 };
 
 export default modal;
