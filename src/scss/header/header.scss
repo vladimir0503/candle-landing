@@ -11,6 +11,11 @@
         height: 100%;
         margin: 0 auto;
 
+        &--burger {
+            cursor: pointer;
+            display: none;
+        }
+
         nav {
             ul {
                 display: flex;
@@ -48,6 +53,46 @@
 
             a {
                 font-size: 18px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .header {
+        &__content {
+            width: auto;
+            padding: 0px 20px 0px 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .header {
+        &__content {
+            nav {
+                display: none;
+            }
+
+            &--burger {
+                display: block;
+            }
+
+            &--tel {
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        height: 66px;
+
+        &__content {
+            &--burger {
+                width: 30px;
+                height: 30px;
             }
         }
     }

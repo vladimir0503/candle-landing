@@ -4,25 +4,31 @@
         z-index: 1;
     }
 
-    &__text {
-        position: relative;
-        z-index: 2;
+    &__wrapper {
         display: flex;
-        flex-direction: column;
-        width: 400px;
-        padding: 60px;
-        margin-top: -443px;
-        margin-left: 924px;
-        background-color: white;
+        justify-content: flex-end;
+        width: 1170px;
+        margin: 0 auto;
+        margin-top: -464px;
 
-        p {
-            margin: 0;
-            font-size: 20px;
-            line-height: 1.4;
-        }
-
-        a {
-            color: var(--brown);
+        &--text {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            padding: 60px;
+            background-color: white;
+    
+            p {
+                margin: 0;
+                font-size: 20px;
+                line-height: 1.4;
+            }
+    
+            a {
+                color: var(--brown);
+            }
         }
     }
 }
