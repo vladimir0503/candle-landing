@@ -31,3 +31,27 @@
         }
     }
 }
+
+@media screen and (max-width: 878px) {
+    .benefits {
+        &__content {
+            justify-content: center;
+
+            &--item {
+                margin-bottom: 45px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 585px) {
+    .benefits {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 378px) {
+}
