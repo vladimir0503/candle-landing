@@ -48,3 +48,25 @@
         }
     }
 }
+
+@media screen and (max-width: 1049px) {
+    .services {
+        padding: 50px 30px 50px 30px;
+    }
+}
+
+@media screen and (max-width: 905px) {
+    .services {
+        &__content {
+            &--items-wrapper {
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 378px) {
+}
