@@ -53,3 +53,46 @@
         }
     }
 }
+
+@media screen and (max-width: 940px) {
+    .consultation-form {
+        padding: 50px 20px 50px 20px;
+        height: auto;
+        width: auto;
+
+        &__content {
+            height: auto;
+
+            form {
+                flex-wrap: wrap;
+            }
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 886px) {
+    .consultation-form {
+        &__content {
+
+            h1 {
+                font-size: 28px;
+            }
+
+            form {
+                input {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 378px) {
+}
