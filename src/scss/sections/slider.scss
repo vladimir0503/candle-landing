@@ -29,3 +29,36 @@
         }
     }
 }
+
+@media screen and (max-width: 1170px) {
+    .slider {
+        &__images-block {
+            &-item {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 516px) {
+    .slider {
+        h2 {
+            font-size: 24px;
+            text-align: center;
+            margin: -18px 0 23px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .slider {
+        &__images-block {
+            &-item {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 378px) {
+}
