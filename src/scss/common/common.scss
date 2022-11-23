@@ -17,3 +17,9 @@
     border-radius: 100%;
     border: 2px solid var(--brown);
 }
+
+@media screen and (max-width: 524px) {
+    .section-title {
+        font-size: 26px;
+    }
+}

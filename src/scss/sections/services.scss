@@ -52,20 +52,42 @@
 @media screen and (max-width: 1049px) {
     .services {
         padding: 50px 30px 50px 30px;
+        width: auto;
     }
 }
 
-@media screen and (max-width: 905px) {
+@media screen and (max-width: 965px) {
     .services {
         &__content {
             &--items-wrapper {
                 justify-content: center;
+                margin-top: 37px;
             }
         }
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 524px) {
+    .services {
+        padding: 13px 13px 50px 13px;
+
+        &__content {
+            &--item {
+                flex-direction: column;
+                align-items: center;
+                width: auto;
+
+                &-descr {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    margin: 0;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 378px) {
