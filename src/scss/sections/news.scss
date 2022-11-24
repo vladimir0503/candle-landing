@@ -35,3 +35,32 @@
         }
     }
 }
+
+@media screen and (max-width: 1170px) {
+    .news {
+        width: auto;
+        padding: 50px 20px 50px 20px;
+
+        &__content {
+            width: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .news {
+        padding-bottom: 5px;
+
+        &__content {
+            &--item {
+                flex-direction: column;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
