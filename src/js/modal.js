@@ -11,17 +11,19 @@ const modal = () => {
         modal.classList.add('show')
     };
 
+    // const timerId = setTimeout(showModal, 10000);
+
     [...modalBtn].forEach(btn => {
         btn.addEventListener('click', () => {
             showModal();
+            clearTimeout(timerId);
         })
     });
 
     hideModalBtn.addEventListener('click', () => {
         modal.classList.remove('show');
+        clearTimeout(timerId);
     });
-
-    // const timerId = setTimeout(showModal, 10000);
 
     form.addEventListener('submit', e => {
         e.preventDefault();
