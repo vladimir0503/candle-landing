@@ -1,3 +1,16 @@
+.logo {
+    font-size: 60px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: underline;
+    margin: 0;
+    margin-right: 20px;
+
+    &:hover {
+        color: var(--brown);
+    }
+}
+
 .section-title {
     font-size: 48px;
     font-weight: 500;
