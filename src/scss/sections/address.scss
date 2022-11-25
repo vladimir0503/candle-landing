@@ -19,16 +19,73 @@
             width: 400px;
             padding: 60px;
             background-color: white;
-    
+
             p {
                 margin: 0;
                 font-size: 20px;
                 line-height: 1.4;
             }
-    
+
             a {
                 color: var(--brown);
             }
         }
     }
+}
+
+@media screen and (max-width: 1170px) {
+    .address {
+        &__wrapper {
+            width: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .address {
+        &__map {
+            iframe {
+                height: 400px;
+            }
+        }
+
+        &__wrapper {
+            margin-top: -387px;
+
+            &--text {
+                width: 280px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .address {
+
+        &__wrapper {
+            margin-top: -349px;
+
+            &--text {
+                padding: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .address {
+        display: flex;
+        flex-direction: column-reverse;
+
+        &__wrapper {
+            margin: 0;
+
+            &--text {
+                width: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 378px) {
 }
