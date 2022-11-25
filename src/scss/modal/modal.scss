@@ -109,3 +109,20 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 410px) {
+    .modal {
+        img {
+            margin-right: -256px;
+        }
+
+        form {
+            width: 271px;
+            padding: 15px;
+
+            button {
+                font-size: 20px;
+            }
+        }
+    }
+}
