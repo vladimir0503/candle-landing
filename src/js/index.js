@@ -6,7 +6,7 @@ import burgerMenu from './burgerMenu';
 
 import 'aos/dist/aos.css';
 
-AOS.init({ once: false });
+AOS.init({ once: true });
 
 smoothScroll();
 slider();
