@@ -15,7 +15,6 @@
 @import "./footer/footer.scss";
 @import "./modal/modal.scss";
 @import "./modal/messageModal.scss";
-@import "./common/spinner/spinner.scss";
 
 :root {
     --brown: #765447;
@@ -49,6 +48,10 @@ button {
 
     &:active {
         transform: scale(0.98);
+        opacity: 0.33;
+    }
+
+    &:disabled {
         opacity: 0.33;
     }
 }

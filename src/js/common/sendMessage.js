@@ -4,9 +4,8 @@ const telegramApi = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id
 
 const sendMessage = async data => {
 
-    const {name, mail, question} = data;
-
-    const message = `<b>Новая заявка!</b>%0A <b>Имя</b>: ${name}%0A <b>Email</b>: ${mail}%0A <b>Вопрос</b>: ${question}`;
+    const {name, mail, field} = data;
+    const message = `<b>Новая заявка!</b>%0A ${name}%0A ${mail}%0A ${field}`;
 
     const res = await fetch(`${telegramApi}${message}`);
     return res;

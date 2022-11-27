@@ -139,10 +139,10 @@
             <div data-aos="fade-down" data-aos-duration="1500" class="consultation-form__content">
                 <h1><span>Запишитесь на консультацию</span></h1>
                 <form>
-                    <input type="text" placeholder="Введите имя" required>
-                    <input type="email" placeholder="mail@mail.ru" required>
-                    <input type="tel" placeholder="xxx-xxx-xxx" required>
-                    <button>Записаться сейчас!</button>
+                    <input type="text" name="name" required placeholder="Введие имя">
+                    <input type="email" name="mail" required placeholder="Введите email">
+                    <input type="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" id="field" name="field" required placeholder="x-xxx-xxx-xx-xx">
+                    <button>Отправить</button>
                 </form>
                 <p>Нажимая на кнопку, Вы принимаете Положение и Согласие на обработку персональных данных.</p>
             </div>
@@ -326,15 +326,15 @@
                     <form>
                         <div>
                             <label for="name">Введие имя</label>
-                            <input type="text" id="name" required placeholder="Введие имя">
+                            <input type="text" id="name" name="name" required placeholder="Введие имя">
                         </div>
                         <div>
                             <label for="mail">Введите email</label>
-                            <input type="email" id="mail" required placeholder="Введите email">
+                            <input type="email" id="mail" name="mail" required placeholder="Введите email">
                         </div>
                         <div>
-                            <label for="question">Задайте ваш вопрос</label>
-                            <input type="text" id="question" required placeholder="Задайте ваш вопрос">
+                            <label for="field">Задайте ваш вопрос</label>
+                            <input type="text" id="field" name="field" required placeholder="Задайте ваш вопрос">
                         </div>
                         <button>Отправить</button>
                     </form>
@@ -401,19 +401,17 @@
                 <input type="email" id="mail" name="mail" required placeholder="Введите email">
             </div>
             <div>
-                <label for="question">Задайте ваш вопрос</label>
-                <input type="text" id="question" name="question" required placeholder="Задайте ваш вопрос">
+                <label for="field">Введите номер телефона</label>
+                <input type="tel" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" id="field" name="field" required placeholder="x-xxx-xxx-xx-xx">
             </div>
-            <button>Записаться сейчас!</button>
+            <button>Отправить</button>
             <p>Нажимая на кнопку, Вы принимаете <a href="#">Положение</a> и <a href="#">Согласие</a> на обработку
                 персональных данных.</p>
         </form>
     </div>
     <div class="message-modal">
         <img id="hideModalBtn" src="./img/cross.png" alt="cross" />
-        <div class="message-modal__content">
-
-        </div>
+        <div class="message-modal__content"></div>
     </div>
 </body>
 
