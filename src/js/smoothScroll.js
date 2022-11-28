@@ -7,7 +7,7 @@ const smoothScroll = () => {
 
             document.querySelector(id).scrollIntoView({
                 behavior: 'smooth',
-                block: 'start'
+                block: 'center'
             });
         });
     };
