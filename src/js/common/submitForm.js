@@ -26,13 +26,13 @@ const submitForm = form => {
 
         if (!res.ok) {
             infoModal.children[1].innerHTML = `
-                <h2>Ошибка отправки!<h2/>
+                <h2>Ошибка отправки!</h2>
                 <p>Попробуйте позже</p>
             `;
         } else {
             infoModal.children[1].innerHTML = `
-                <h2>Сообщение отправленно!<h2/>
-                <p>С вами скоро свяжутся</p>
+                <h2>Сообщение отправленно!</h2>
+                <p>С Вами скоро свяжутся</p>
             `;
         };
 
