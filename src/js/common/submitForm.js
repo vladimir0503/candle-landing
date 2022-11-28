@@ -31,7 +31,7 @@ const submitForm = form => {
             `;
         } else {
             infoModal.children[1].innerHTML = `
-                <h2>Сообщение отправленно!</h2>
+                <h2>Сообщение отправлено!</h2>
                 <p>С Вами скоро свяжутся</p>
             `;
         };
