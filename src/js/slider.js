@@ -21,7 +21,6 @@ const slider = () => {
     const slides = document.querySelectorAll('.slider__wrapper--slides--slide');
 
     const changeSlide = count => {
-        console.log(count);
         slides.forEach((slide, i) => {
             if (i === count) {
                 slide.classList.add('show');
