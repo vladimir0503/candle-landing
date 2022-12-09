@@ -72,7 +72,7 @@
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1036px) {
     .header {
         &__content {
             nav {
@@ -98,6 +98,17 @@
             &--burger {
                 width: 30px;
                 height: 30px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .header {
+        &__content {
+            &--tel {
+                display: none;
             }
         }
     }
