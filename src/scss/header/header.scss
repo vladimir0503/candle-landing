@@ -25,7 +25,7 @@
             ul {
                 display: flex;
                 justify-content: space-between;
-                width: 717px;
+                width: 626px;
                 list-style-type: none;
             }
         }
@@ -60,6 +60,12 @@
                 font-size: 18px;
             }
         }
+
+        &--messengers {
+            display: flex;
+            justify-content: space-between;
+            width: 110px;
+        }
     }
 }
 
@@ -76,6 +82,10 @@
     .header {
         &__content {
             nav {
+                display: none;
+            }
+
+            &--messengers {
                 display: none;
             }
 
@@ -102,7 +112,6 @@
         }
     }
 }
-
 
 @media screen and (max-width: 400px) {
     .header {
