@@ -7,10 +7,14 @@ import formHandler from './formHandler'
 
 import 'aos/dist/aos.css';
 
-AOS.init({ once: true });
+window.addEventListener('DOMContentLoaded', () => {
 
-smoothScroll();
-slider();
-modal();
-burgerMenu();
-formHandler();
+    AOS.init({ once: true });
+
+    smoothScroll();
+    slider();
+    modal();
+    burgerMenu();
+    formHandler();
+    
+});
