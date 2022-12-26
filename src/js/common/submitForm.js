@@ -9,6 +9,7 @@ const submitForm = form => {
     })[0];
 
     form.addEventListener('submit', async e => {
+
         e.preventDefault();
 
         const formData = new FormData(form);

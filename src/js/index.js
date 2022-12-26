@@ -16,5 +16,5 @@ window.addEventListener('DOMContentLoaded', () => {
     modal();
     burgerMenu();
     formHandler();
-    
+
 });

@@ -1,22 +1,43 @@
 const modal = () => {
 
     const modal = document.querySelector('.modal');
+    const modalBtn = document.getElementById('modalBtn');
     const hideModalBtn = document.getElementById('hideModalBtn');
-
-    const showModal = () => {
-        modal.classList.add('show')
+    const messageModal = document.querySelector('.message-modal');
+    
+    const showModal = elem => {
+        elem.classList.add('show');
+        document.body.style.overflow = 'hidden';
     };
 
-    [...modalBtn].forEach(btn => {
-        btn.addEventListener('click', () => {
-            showModal();
-            clearTimeout(timerId);
-        })
-    });
+    const hideModal = elem => {
+        elem.classList.remove('show');
+        document.body.style.overflow = '';
+    };
 
-    hideModalBtn.addEventListener('click', () => {
-        modal.classList.remove('show');
-    });
+    const modalInit = (onBtn, offBtn, wrapper, wrapperTwo) => {
+        onBtn.addEventListener('click', () => {
+            showModal(wrapper);
+        });
+
+        offBtn.addEventListener('click', () => {
+            hideModal(wrapper);
+        });
+
+        wrapper.addEventListener('click', e => {
+            if (e.target === wrapper) {
+                hideModal(wrapper);
+            };
+        });
+
+        wrapperTwo.addEventListener('click', e => {
+            if (e.target === wrapperTwo) {
+                hideModal(wrapperTwo);
+            };
+        });
+    };
+
+    modalInit(modalBtn, hideModalBtn, modal, messageModal);
 };
 
 export default modal;
