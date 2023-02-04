@@ -22,7 +22,7 @@
         &--items-wrapper {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: center;
             width: 1170px;
             margin: 0 auto;
 
@@ -32,7 +32,7 @@
                 align-items: center;
                 text-align: center;
                 padding: 20px 13px 15px 13px;
-                margin-bottom: 45px;
+                margin: 0 20px 45px 0;
                 width: 344px;
                 background: #ffffff00;
                 box-shadow: 0 0 3px -1px #555;

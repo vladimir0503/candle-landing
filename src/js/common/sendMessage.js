@@ -1,5 +1,5 @@
 const botToken = '5796180099:AAEK7ED6DP735MvASQFJUjXb_VAUi0zfUvM';
-const chatId = -865964591;
+const chatId = -862534173;
 const telegramApi = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&parse_mode=html&text=`;
 
 const sendMessage = async data => {

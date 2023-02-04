@@ -3,7 +3,8 @@ import slider from "./slider";
 import smoothScroll from './smoothScroll';
 import modal from './modal';
 import burgerMenu from './burgerMenu';
-import formHandler from './formHandler'
+import formHandler from './formHandler';
+import loadData from './common/loadData';
 
 import 'aos/dist/aos.css';
 
@@ -11,10 +12,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
     AOS.init({ once: true });
 
+    loadData();
     smoothScroll();
-    slider();
+    // slider();
     modal();
     burgerMenu();
     formHandler();
-
 });
