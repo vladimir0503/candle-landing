@@ -27,15 +27,15 @@ const loadData = async () => {
 
     const renderPrice = data => {
         const section = document.querySelector('.price');
-        const table = document.querySelector('.price table tbody')
+        const table = document.querySelector('.price table tbody');
 
         if (data.length) {
             data.forEach(item => {
                 table.insertAdjacentHTML('beforeend', `
                     <tr>
                         <td>${item.name}</td>
-                        <td>${item.constant} руб.</td>
                         <td>${item.new} руб.</td>
+                        <td>${item.constant} руб.</td>
                     </tr>
                 `)
             });
