@@ -1,0 +1,30 @@
+.products-block {
+    display: flex;
+
+    &__content {
+        width: 1096px;
+        margin: 0 auto;
+
+        &--product-item {
+            display: flex;
+            align-items: center;
+            margin-top: 28px;
+
+            p {
+                font-style: italic;
+                font-size: 20px;
+                line-height: 50px;
+                text-align: center;
+            }
+
+            // img {
+            //     width: 598px;
+            //     height: 598px;
+            // }
+        }
+    }
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}

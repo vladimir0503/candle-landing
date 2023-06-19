@@ -1,0 +1,51 @@
+.ozon-block {
+    display: flex;
+    width: 1320px;
+    height: 550px;
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 74px;
+    border-radius: 20px;
+    background-image: url(../img/photo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 900px;
+        margin: 0 auto;
+
+        h1 {
+            font-family: 'Miama Nueva';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 78.225px;
+            line-height: 172px;
+            margin: 100px 0 33px 0;
+        }
+
+        p {
+            font-style: italic;
+            font-size: 32px;
+            line-height: 39px;
+            margin-bottom: 44px;
+        }
+
+        button {
+            width: 204px;
+            height: 46px;
+            background: #0249FF;
+            border-radius: 30px;
+            font-family: 'Montserrat Alternates';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            color: #FFFFFF;
+        }
+    }
+
+}

@@ -1,27 +1,33 @@
-@import "normalize.css";
 @import "./common/common.scss";
 @import "./header/header.scss";
-@import "./sections/mainTitle.scss";
-@import "./sections/about.scss";
-@import "./sections/benefits.scss";
-@import "./sections/consultationForm.scss";
-@import "./sections/services.scss";
-@import "./sections/slider.scss";
-@import "./sections/news.scss";
-@import "./sections/reviews.scss";
-@import "./sections/price.scss";
-@import "./sections/feedback.scss";
-@import "./sections/address.scss";
-@import "./footer/footer.scss";
-@import "./modal/modal.scss";
-@import "./modal/messageModal.scss";
+@import "./ozonBlock/ozonBlock.scss";
+@import "./productBlock/productBlock.scss";
+
+@import "normalize.css";
+
+@font-face {
+    font-family: "Miama Nueva";
+    src: url("../fonts/miamanueva.ttf") format("truetype");
+    font-style: normal;
+}
 
 :root {
-    --brown: #765447;
+    --dark-gray: #222222;
+    --white: #FFFFFF;
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
+    background-color: var(--dark-gray);
+    color: var(--white);
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    font-family: 'Montserrat Alternates';
 }
 
 ul,
@@ -31,27 +37,7 @@ li {
     list-style-type: none;
 }
 
-span {
-    color: var(--brown);
-}
-
-input {
-    outline: none;
-}
-
 button {
-    background-color: var(--brown);
-    color: white;
     border: none;
     cursor: pointer;
-    transition: 0.4s;
-
-    &:active {
-        transform: scale(0.98);
-        opacity: 0.33;
-    }
-
-    &:disabled {
-        opacity: 0.33;
-    }
 }
