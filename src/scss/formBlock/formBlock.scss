@@ -47,6 +47,7 @@
             textarea {
                 @extend %input;
                 height: 120px;
+                padding-top: 20px;
             }
 
             p {
