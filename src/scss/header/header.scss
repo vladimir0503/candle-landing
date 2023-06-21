@@ -41,5 +41,39 @@
                 height: 100%;
             }
         }
+
+        &--burger-btn {
+            display: none;
+        }
     }
+}
+
+@media screen and (max-width: 1172px) {
+    .header {
+        padding: 0 20px 0 20px;
+
+        &__content {
+            nav {
+                display: none;
+            }
+
+            &--social {
+                display: none;
+            }
+
+            &--burger-btn {
+                display: flex;
+                flex-direction: column;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.burger-btn-line {
+    width: 30px;
+    height: 3px;
+    background-color: var(--white);
+    margin-bottom: 7px;
+    border-radius: 6px;
 }

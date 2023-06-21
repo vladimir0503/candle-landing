@@ -49,3 +49,24 @@
     }
 
 }
+
+@media screen and (max-width: 1320px) {
+    .ozon-block {
+        width: auto;
+        height: auto;
+        padding: 0 10px 0 10px;
+
+        &__content {
+            text-align: center;
+            height: auto;
+
+            h1 {
+                margin: 0;
+            }
+
+            button {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
