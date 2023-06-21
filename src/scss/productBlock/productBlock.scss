@@ -23,3 +23,15 @@
 .reverse {
     flex-direction: row-reverse;
 }
+
+@media screen and (max-width: 1096px) {
+    .products-block {
+        &__content {
+            width: 567px;
+
+            &--product-item {
+                flex-direction: column;
+            }
+        }
+    }
+}
