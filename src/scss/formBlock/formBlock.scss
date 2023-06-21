@@ -71,3 +71,13 @@
         }
     }
 }
+
+@media screen and (max-width: 1096px) {
+    .form-block {
+        padding: 0px 20px 0 20px;
+
+        &__content {
+            width: auto;
+        }
+    }
+}

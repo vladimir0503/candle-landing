@@ -53,3 +53,29 @@
         }
     }
 }
+
+@media screen and (max-width: 1320px) {
+    img[alt='line'] {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1096px) {
+    .footer {
+        &__content {
+            width: auto;
+
+            &--logo-block {
+
+                &--social {
+                    display: none;
+                }
+            }
+
+            &--copyright {
+                width: auto;
+                padding: 0 90px 0 119px;
+            }
+        }
+    }
+}
