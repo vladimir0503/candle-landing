@@ -70,3 +70,35 @@
         }
     }
 }
+
+@media screen and (max-width: 670px) {
+    .ozon-block {
+        width: 300px;
+        height: 179px;
+        margin-top: 77px;
+        padding: 0;
+
+        &__content {
+
+            h1 {
+                font-size: 23.764px;
+                line-height: 55px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 13.214px;
+                font-weight: 300;
+                line-height: 22px;
+                margin-bottom: 18px;
+            }
+
+            button {
+                width: 116px;
+                height: 26px;
+                font-size: 13.412px;
+                font-weight: 500;
+            }
+        }
+    }
+}
