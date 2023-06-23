@@ -6,3 +6,9 @@
     font-size: 48px;
     line-height: 105px;
 }
+
+@media screen and (max-width: 670px) {
+    .title {
+        font-size: 20.432px;
+    }
+}

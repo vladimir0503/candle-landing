@@ -35,3 +35,32 @@
         }
     }
 }
+
+@media screen and (max-width: 670px) {
+    .products-block {
+        &__content {
+            width: 272px;
+
+            &--product-item {
+                margin-top: 0;
+
+                img {
+                    object-fit: cover;
+                    width: 272px;
+                    height: 140px;
+                    border-radius: 25px;
+                    box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.15);
+                }
+
+                p {
+                    color: #FFF;
+                    text-align: center;
+                    font-size: 14px;
+                    font-style: italic;
+                    line-height: 25px;
+                    margin: 10px 0 27px 0;
+                }
+            }
+        }
+    }
+}
