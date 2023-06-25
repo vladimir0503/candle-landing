@@ -8,13 +8,22 @@
         &--product-item {
             display: flex;
             align-items: center;
-            margin-top: 28px;
+            margin-top: 74px;
 
             p {
+                width: 538px;
                 font-style: italic;
                 font-size: 20px;
                 line-height: 50px;
                 text-align: center;
+            }
+
+            img {
+                width: 538px;
+                height: 538px;
+                object-fit: cover;
+                border-radius: 20px;
+                box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.15);
             }
         }
     }

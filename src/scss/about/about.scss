@@ -3,6 +3,8 @@
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
         width: 1320px;
 
         img {
@@ -20,11 +22,29 @@
             font-style: italic;
             line-height: 50px;
             letter-spacing: 1px;
+            width: 650px;
 
             p {
                 &:first-child {
                     margin-bottom: 20px;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1096px) {
+    .about-block {
+        &__content {
+            width: 538px;
+            flex-direction: column-reverse;
+
+            &--description {
+                width: auto;
+            }
+
+            img {
+                width: 100%;
             }
         }
     }
