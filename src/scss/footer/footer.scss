@@ -79,3 +79,48 @@
         }
     }
 }
+
+@media screen and (max-width: 767px) {
+    .footer {
+        height: 73px;
+
+        &__content {
+
+            a,
+            p {
+                font-size: 10px;
+                letter-spacing: 0.5px;
+            }
+
+            &--logo-block {
+                padding: 0 24px 0 24px;
+                margin: 0;
+
+                &--links {
+                    height: auto;
+
+                    a {
+                        &:nth-child(1) {
+                            margin-bottom: -12px;
+                        }
+                    }
+                }
+            }
+
+            &--copyright {
+                position: relative;
+                top: 3px;
+                padding: 0 24px 0 35px;
+            }
+
+            img[alt="logo"] {
+                position: relative;
+                bottom: 5px;
+                width: 114px;
+                height: 39px;
+            }
+
+
+        }
+    }
+}

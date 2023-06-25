@@ -22,7 +22,7 @@
         form {
             display: flex;
             flex-direction: column;
-            margin: 14px 0 155px 0;
+            margin: 42px 0 155px 0;
             padding: 68px 121px 0 121px;
             border: 1px solid #FFFFFF;
             box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.15);
@@ -85,6 +85,8 @@
 
 @media screen and (max-width: 670px) {
     .form-block {
+        margin-top: -30px;
+
         &__content {
             width: 271px;
 
@@ -92,6 +94,19 @@
                 padding: 0;
                 border: none;
                 box-shadow: none;
+                margin-top: 0;
+                margin-bottom: 57px;
+
+                p {
+                    &:nth-child(1) {
+                        display: none;
+                    }
+
+                    &:last-child {
+                        font-size: 10px;
+                        margin-top: 20px;
+                    }
+                }
 
                 input {
                     height: 28.8px;

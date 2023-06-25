@@ -4,6 +4,7 @@
     &__content {
         width: 1096px;
         margin: 0 auto;
+        margin-bottom: 37px;
 
         &--product-item {
             display: flex;
@@ -37,6 +38,7 @@
     .products-block {
         &__content {
             width: 567px;
+            margin-bottom: 0;
 
             &--product-item {
                 flex-direction: column;
