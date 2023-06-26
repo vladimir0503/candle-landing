@@ -1,7 +1,7 @@
-import AOS from 'aos';
-
-import 'aos/dist/aos.css';
+import smoothScroll from "./smoothScroll";
+import burgerMenu from "./burgerMenu";
 
 window.addEventListener('DOMContentLoaded', () => {
-    AOS.init({ once: true });
+    smoothScroll();
+    burgerMenu();
 });

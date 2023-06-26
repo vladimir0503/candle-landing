@@ -19,9 +19,10 @@
             <img src="../img/logo.jpg" alt="logo" />
             <nav>
                 <ul>
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">О продукции</a></li>
-                    <li><a href="#">Связаться</a></li>
+                    <li><a data-nav href="#home">Главная</a></li>
+                    <li><a data-nav href="#about">О нас</a></li>
+                    <li><a data-nav href="#products">О продукции</a></li>
+                    <li><a data-nav href="#message">Связаться</a></li>
                 </ul>
             </nav>
             <div class="header__content--social">
@@ -37,14 +38,14 @@
         </div>
     </header>
     <main>
-        <section class="ozon-block">
+        <section id="home" class="ozon-block">
             <div class="ozon-block__content">
                 <h1>Ароматические свечи</h1>
                 <p>Помогут наполнить дом теплом и уютом</p>
                 <button>OZON</button>
             </div>
         </section>
-        <section class="about-block">
+        <section id="about" class="about-block">
             <h3 class="title">О нас</h3>
             <div class="about-block__content">
                 <div class="about-block__content--description">
@@ -67,7 +68,7 @@
                 <img class="large-photo" src="../img/photo.jpg" alt="photo" />
             </div>
         </section>
-        <section class="products-block">
+        <section id="products" class="products-block">
             <div class="products-block__content">
                 <h3 class="title">О продукции</h3>
                 <div class="products-block__content--product-item">
@@ -94,7 +95,7 @@
                 </div>
             </div>
         </section>
-        <section class="form-block">
+        <section id="message" class="form-block">
             <div class="form-block__content">
                 <h3 class="title">Связаться</h3>
                 <form>
