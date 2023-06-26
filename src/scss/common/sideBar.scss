@@ -1,0 +1,45 @@
+.side-bar {
+    position: fixed;
+    z-index: 10000;
+    top: 124px;
+    right: -320px;
+    width: 320px;
+    height: 100vh;
+    background-color: var(--dark-gray);
+    transition: 0.3s;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+
+        ul {
+            padding-left: 10px;
+
+            li {
+                margin-bottom: 31px;
+            }
+        }
+
+        &--social {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            margin-bottom: 35px;
+            width: 229px;
+        }
+
+        &--contacts {
+            text-align: center;
+        }
+    }
+
+    &.show {
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .side-bar {
+        top: 75px;
+    }
+}

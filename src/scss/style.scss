@@ -1,10 +1,11 @@
-@import "./common/common.scss";
 @import "./header/header.scss";
 @import "./ozonBlock/ozonBlock.scss";
 @import "./about/about.scss";
 @import "./productBlock/productBlock.scss";
 @import "./formBlock/formBlock.scss";
 @import "./footer/footer.scss";
+@import "./common/title.scss";
+@import "./common/sideBar.scss";
 
 @import "normalize.css";
 
@@ -47,4 +48,17 @@ button {
 
 img {
     flex: 0 0 auto;
+}
+
+a {
+    font-family: 'Montserrat Alternates';
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    color: var(--white);
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
