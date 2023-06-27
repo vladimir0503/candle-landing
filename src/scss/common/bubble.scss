@@ -1,0 +1,19 @@
+.bubble {
+    display: none;
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    z-index: 10000000;
+    transition: 0.2s;
+    opacity: 0;
+
+    &.show {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .bubble {
+        display: block;
+    }
+}

@@ -100,10 +100,11 @@
                 <h3 class="title">Связаться</h3>
                 <form>
                     <p>Напишите нам и мы свяжемся с Вами!</p>
-                    <input placeholder="Имя" type="text" name="name" />
-                    <input placeholder="Телефон" type="tel" name="tel" />
-                    <input placeholder="e-mail" type="email" name="email" />
-                    <textarea placeholder="Сообщение" type="text"></textarea>
+                    <input placeholder="Имя" type="text" name="name" required />
+                    <input placeholder="Телефон" type="tel" name="tel" required
+                        pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" />
+                    <input placeholder="e-mail" type="email" name="email" required />
+                    <textarea placeholder="Сообщение" type="text" name="message" required></textarea>
                     <input type="submit" value="Отправить" />
                     <p>*нажимая на кнопку, Вы принимаете <a href="#">Согласие</a> на обработку персональных данных.</p>
                 </form>
@@ -130,6 +131,9 @@
                 </div>
             </div>
         </div>
+        <a href="#message" class="bubble">
+            <img src="../img/bubble.png" alt="bubble" />
+        </a>
     </main>
     <footer class="footer">
         <div class="footer__content">

@@ -6,6 +6,7 @@
 @import "./footer/footer.scss";
 @import "./common/title.scss";
 @import "./common/sideBar.scss";
+@import "./common/bubble.scss";
 
 @import "normalize.css";
 
@@ -44,6 +45,15 @@ li {
 button {
     border: none;
     cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+        transform: translateY(2px);
+    }
+
+    &:active {
+        transform: translateY(4px);
+    }
 }
 
 img {
@@ -60,5 +70,17 @@ a {
 
     &:hover {
         text-decoration: underline;
+    }
+}
+
+input[type="submit"] {
+    transition: 0.2s;
+
+    &:hover {
+        transform: translateY(2px);
+    }
+
+    &:active {
+        transform: translateY(4px);
     }
 }

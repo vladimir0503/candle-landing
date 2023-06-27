@@ -8,7 +8,7 @@ const burgerMenu = () => {
     const toggleMenu = () => {
         menuInit = !menuInit;
         if (menuInit) {
-            btnLine[0].style.cssText = `transform: rotate(45deg) translate(6px, 7px)`;
+            btnLine[0].style.cssText = `transform: rotate(45deg) translate(7px, 7px)`;
             btnLine[1].style.opacity = '0';
             btnLine[2].style.cssText = `transform: rotate(-45deg) translate(7px, -7px);`;
             sideBar.classList.add('show');
