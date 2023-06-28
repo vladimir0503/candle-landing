@@ -35,6 +35,9 @@
         }
 
         button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 204px;
             height: 46px;
             background: #0249FF;

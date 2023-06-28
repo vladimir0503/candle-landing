@@ -31,6 +31,7 @@ const formSubmit = () => {
         const message = `<b>Новая заявка!</b>%0A ${data.name}%0A ${data.tel}%0A ${data.email}%0A ${data.message}`;
 
         try {
+            e.target.children[5].disabled = true;
             e.target.children[5].value = 'Отправка...';
             await fetch(`${telegramApi}${message}`);
             showModal(
@@ -40,10 +41,11 @@ const formSubmit = () => {
         } catch (error) {
             showModal(
                 'Ой, что то пошло не так(',
-                'Напишите нам в телеграмм или в ВК, и мы с вами свяжемся'
+                'Напишите нам в телеграмм или в ВК, и мы с Вами свяжемся'
             );
             console.log(error);
         } finally {
+            e.target.children[5].disabled = false;
             e.target.children[5].value = 'Отправить';
             e.target.reset();
         };

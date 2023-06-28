@@ -104,7 +104,13 @@
 
                 p {
                     &:nth-child(1) {
-                        display: none;
+                        text-align: center;
+                        font-size: 15px;
+                        font-style: italic;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: 1.05px;
+                        margin-bottom: 12px;
                     }
 
                     &:last-child {
