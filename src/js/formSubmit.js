@@ -5,6 +5,17 @@ const formSubmit = () => {
     const telegramApi = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&parse_mode=html&text=`;
 
     const form = document.querySelector('form');
+    const modal = document.querySelector('.modal');
+
+    modal.children[0].children[2].addEventListener('click', () => {
+        modal.classList.remove('show');
+    });
+
+    const showModal = (title, message) => {
+        modal.classList.add('show');
+        modal.children[0].children[0].textContent = title;
+        modal.children[0].children[1].textContent = message;
+    };
 
     form.addEventListener('submit', async e => {
         e.preventDefault();
@@ -22,7 +33,15 @@ const formSubmit = () => {
         try {
             e.target.children[5].value = 'Отправка...';
             await fetch(`${telegramApi}${message}`);
+            showModal(
+                'Спасибо, Ваше сообщение успешно отправлено',
+                'Наш менеджер скоро с Вами свяжется'
+            );
         } catch (error) {
+            showModal(
+                'Ой, что то пошло не так(',
+                'Напишите нам в телеграмм или в ВК, и мы с вами свяжемся'
+            );
             console.log(error);
         } finally {
             e.target.children[5].value = 'Отправить';

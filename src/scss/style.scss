@@ -7,6 +7,7 @@
 @import "./common/title.scss";
 @import "./common/sideBar.scss";
 @import "./common/bubble.scss";
+@import "./common/modal.scss";
 
 @import "normalize.css";
 
@@ -26,7 +27,8 @@ body {
     color: var(--white);
 }
 
-h1 {
+h1,
+h2 {
     margin: 0;
 }
 
