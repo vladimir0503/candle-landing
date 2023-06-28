@@ -6,15 +6,6 @@ const formSubmit = () => {
 
     const form = document.querySelector('form');
 
-    // const sendMessage = async data => {
-
-    //     const { name, mail, field } = data;
-    //     const message = `<b>Новая заявка!</b>%0A ${name}%0A ${mail}%0A ${field}`;
-
-    //     const res = await fetch(`${telegramApi}${message}`);
-    //     return res;
-    // };
-
     form.addEventListener('submit', async e => {
         e.preventDefault();
 
@@ -31,8 +22,9 @@ const formSubmit = () => {
         `;
 
         e.target.children[5].value = 'Отправка...';
+        const res = await fetch(`${telegramApi}${message}`);
 
-        // const res = await fetch(`${telegramApi}${message}`);
+        e.target.children[5].value = 'Отправить';
 
     });
 
