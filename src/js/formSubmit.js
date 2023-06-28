@@ -17,14 +17,17 @@ const formSubmit = () => {
             message: formData.get('message')
         };
 
-        const message = `
-            <b>Новая заявка!</b>%0A ${data.name}%0A ${data.tel}%0A ${data.email}%0A ${data.message}
-        `;
+        const message = `<b>Новая заявка!</b>%0A ${data.name}%0A ${data.tel}%0A ${data.email}%0A ${data.message}`;
 
-        e.target.children[5].value = 'Отправка...';
-        const res = await fetch(`${telegramApi}${message}`);
-
-        e.target.children[5].value = 'Отправить';
+        try {
+            e.target.children[5].value = 'Отправка...';
+            await fetch(`${telegramApi}${message}`);
+        } catch (error) {
+            console.log(error);
+        } finally {
+            e.target.children[5].value = 'Отправить';
+            e.target.reset();
+        };
 
     });
 
