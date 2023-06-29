@@ -34,6 +34,12 @@
             margin-bottom: 44px;
         }
 
+        a {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
         button {
             display: flex;
             justify-content: center;
@@ -48,6 +54,7 @@
             font-size: 24px;
             line-height: 29px;
             color: #FFFFFF;
+            text-decoration: none;
         }
     }
 

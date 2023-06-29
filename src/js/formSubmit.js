@@ -9,6 +9,7 @@ const formSubmit = () => {
 
     modal.children[0].children[2].addEventListener('click', () => {
         modal.classList.remove('show');
+        document.body.style.overflow = 'auto';
     });
 
     const showModal = (title, message) => {
@@ -34,6 +35,7 @@ const formSubmit = () => {
             e.target.children[5].disabled = true;
             e.target.children[5].value = 'Отправка...';
             await fetch(`${telegramApi}${message}`);
+            document.body.style.overflow = 'hidden';
             showModal(
                 'Спасибо, Ваше сообщение успешно отправлено',
                 'Наш менеджер скоро с Вами свяжется'
